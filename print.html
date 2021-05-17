@@ -99,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="what-is-html.html"><strong aria-hidden="true">1.</strong> What is HTML?</a></li><li class="chapter-item expanded "><a href="html-document.html"><strong aria-hidden="true">2.</strong> HTML Document</a></li><li class="chapter-item expanded "><a href="headings-and-paragraph.html"><strong aria-hidden="true">3.</strong> Heading and Paragraph</a></li><li class="chapter-item expanded "><a href="attributes-and-values.html"><strong aria-hidden="true">4.</strong> Attributes and Values</a></li><li class="chapter-item expanded "><a href="text-formatting.html"><strong aria-hidden="true">5.</strong> Text Formatting</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="what-is-html.html"><strong aria-hidden="true">1.</strong> What is HTML?</a></li><li class="chapter-item expanded "><a href="html-document.html"><strong aria-hidden="true">2.</strong> HTML Document</a></li><li class="chapter-item expanded "><a href="headings-and-paragraph.html"><strong aria-hidden="true">3.</strong> Heading and Paragraph</a></li><li class="chapter-item expanded "><a href="attributes-and-values.html"><strong aria-hidden="true">4.</strong> Attributes and Values</a></li><li class="chapter-item expanded "><a href="text-formatting.html"><strong aria-hidden="true">5.</strong> Text Formatting</a></li><li class="chapter-item expanded "><a href="anchor-link.html"><strong aria-hidden="true">6.</strong> Anchor Link</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -399,6 +399,42 @@ Attribute Name နှင့် Value လို့သာသုံးပါတယ�
 <h2 id="superscript-ကိုတောထပကိနးများတငသညအခါသုံးလေရှိပါတယ"><a class="header" href="#superscript-ကိုတောထပကိနးများတငသညအခါသုံးလေရှိပါတယ">Superscript ကိုတော့ထပ်ကိန်းများတင်သည့်အခါသုံးလေ့ရှိပါတယ်။</a></h2>
 <pre><code class="language-html">x&lt;sup&gt;2&lt;/sup&gt;
 </code></pre>
+<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="anchor-link"><a class="header" href="#anchor-link">Anchor Link</a></h1>
+<p>ပြင်ပ Website များကိုဖြစ်စေ၊ မိမိ၏ Local Web Document ကိုဖြစ်စေ ချိတ်ဆက်ချင်တဲ့အခါ Anchor Link ကိုအသုံးပြုပါတယ်။</p>
+<p>ပြင်ပ Website များကိုချိတ်ဆက်တဲ့အခါ အောက်ပါအတိုင်းချိတ်ဆက်ရပါတယ်။</p>
+<pre><code class="language-html">&lt;a href=&quot;https://google.com&quot;&gt;Go To Google&lt;/a&gt;
+</code></pre>
+<p><code>href</code> သည် Hyper Reference ရဲ့အတိုကောက်ဖြစ်ပါတယ်။
+<code>href</code> Attribute သည် သွားလိုသည့် Destination (or) Path ကိုညွှန်းပေးပါတယ်။
+ပြင်ပ Website များကို Link ချိတ်ချင်တာဖြစ်လို့ <code>https://</code>  (or) <code>http://</code> ဆိုတဲ့ Protocol ကို Website Address ရဲ့ ရှေ့မှာထည့်ပေးရပါတယ်။
+ပြင်ပ Website များကိုချိတ်ဆက်ခြင်းကို Relative Linking လို့ခေါ်ပါတယ်။</p>
+<p>Local Webpage များကိုချိတ်ဆက်ချင်တဲ့အခါ File Path ကိုချိတ်ပေးယုံပါပဲ။
+ဉပမာ - index.html File နှင့် another.html ဆိုတဲ့ HTML ဖိုင် နှစ်ခုရှိတယ်ဆိုပါစို့။
+<code>index.html</code> ကနေ <code>another.html</code> ကိုချိတ်ချင်တဲ့အခါအောက်ပါအတိုင်းချိတ်ရပါတယ်။</p>
+<pre><code class="language-html">&lt;a href=&quot;another.html&quot;&gt;Go To Another Local Web Page (or) Document&lt;/a&gt;
+</code></pre>
+<p>အကယ်၍ <code>another.html</code> သည် Folder တစ်ခုအောက်တွင်ရှိလျှင် ယင်းဖိုဒါ Path ကိုပါအတိအကျထည့်ပြီးချိတ်ဆက်ပေးရပါတယ်။</p>
+<pre><code class="language-html">&lt;a href=&quot;folderName/another.html&quot;&gt;Go To Another Local Web Page (or) Document&lt;/a&gt;
+</code></pre>
+<p>##.Local Web Document များကိုချိတ်ဆက်ခြင်းကို Absolute Linking လို့ခေါ်ပါတယ်။</p>
+<p><strong>Identifier Name - ID</strong></p>
+<p>ID ကိုတော့ Unique ဖြစ်စေချင်တဲ့အခါသုံးပါတယ်။
+Local Web Document ထဲမှာရှိတဲ့ Data တွေကိုချိတ်ဆက်ချင်တဲ့အခါ ID သတ်မှတ်ပြီးတော့အတိအကျချိတ်ဆက်ရပါတယ်။
+သို့မှသာ Link ကို နှိပ်လိုက်တဲ့အခါအတိအကျသွားမှာဖြစ်ပါတယ်။</p>
+<p>ID သတ်မှတ်တဲ့အခါအောက်ပါအတိုင်းသတ်မှတ်ရပါတယ်။</p>
+<pre><code class="language-html">&lt;p id=&quot;para&quot;&gt;
+  A Paragrapgh.
+&lt;/p&gt;
+</code></pre>
+<p>ထို ID ကို Anchor Link မှလှမ်းချိတ်ချင်တဲ့အခါ အောက်ပါအတိုင်းချိတ်ပေးရပါတယ်။</p>
+<pre><code class="language-html">&lt;p id=&quot;para&quot;&gt;
+  A Paragrapgh.
+&lt;/p&gt;
+&lt;a href=&quot;#para&quot;&gt;&lt;/a&gt;
+</code></pre>
+<p><code>#</code> - Pound Sign (or) Hash Sign အသုံးပြုပြီး Local Web Document ကိုချိတ်ဆက်နိုင်ပါတယ်။
+<code>#</code> ရဲ့နောက်မှာတော့ သတ်မှတ်ခဲ့တဲ့ <code>id</code> ရဲ့ Value ကိုပေးရပါတယ်။သို့မှသာ Local Document အတွင်းကောင်းစွာအလုပ်လုပ်မှာဖြစ်ပါတယ်။
+Local Document အတွင်း ချိတ်ဆက်ခြင်းကို Bookmark လုပ်ခြင်းလို့လည်းခေါ်ပါတယ်။</p>
 
                     </main>
 

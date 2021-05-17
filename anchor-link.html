@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>HTML Document - Programming 101</title>
+        <title>Anchor Link - Programming 101</title>
         
         
 
@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="what-is-html.html"><strong aria-hidden="true">1.</strong> What is HTML?</a></li><li class="chapter-item expanded "><a href="html-document.html" class="active"><strong aria-hidden="true">2.</strong> HTML Document</a></li><li class="chapter-item expanded "><a href="headings-and-paragraph.html"><strong aria-hidden="true">3.</strong> Heading and Paragraph</a></li><li class="chapter-item expanded "><a href="attributes-and-values.html"><strong aria-hidden="true">4.</strong> Attributes and Values</a></li><li class="chapter-item expanded "><a href="text-formatting.html"><strong aria-hidden="true">5.</strong> Text Formatting</a></li><li class="chapter-item expanded "><a href="anchor-link.html"><strong aria-hidden="true">6.</strong> Anchor Link</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="what-is-html.html"><strong aria-hidden="true">1.</strong> What is HTML?</a></li><li class="chapter-item expanded "><a href="html-document.html"><strong aria-hidden="true">2.</strong> HTML Document</a></li><li class="chapter-item expanded "><a href="headings-and-paragraph.html"><strong aria-hidden="true">3.</strong> Heading and Paragraph</a></li><li class="chapter-item expanded "><a href="attributes-and-values.html"><strong aria-hidden="true">4.</strong> Attributes and Values</a></li><li class="chapter-item expanded "><a href="text-formatting.html"><strong aria-hidden="true">5.</strong> Text Formatting</a></li><li class="chapter-item expanded "><a href="anchor-link.html" class="active"><strong aria-hidden="true">6.</strong> Anchor Link</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -169,55 +169,53 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="html-document"><a class="header" href="#html-document">HTML Document</a></h1>
-<p>Web Browser တွင်မြင်တွေ့နေရသော Website များကို Web Page များ (သို့မဟုတ်) HTMl Document များနှင့်တည်‌ဆောက်ထားတာဖြစ်ပါတယ်။</p>
-<h2 id="base-structure-of-html"><a class="header" href="#base-structure-of-html">Base Structure of HTML</a></h2>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;title&gt;Title of This Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  
-&lt;/body&gt;
-&lt;/html&gt;
+                        <h1 id="anchor-link"><a class="header" href="#anchor-link">Anchor Link</a></h1>
+<p>ပြင်ပ Website များကိုဖြစ်စေ၊ မိမိ၏ Local Web Document ကိုဖြစ်စေ ချိတ်ဆက်ချင်တဲ့အခါ Anchor Link ကိုအသုံးပြုပါတယ်။</p>
+<p>ပြင်ပ Website များကိုချိတ်ဆက်တဲ့အခါ အောက်ပါအတိုင်းချိတ်ဆက်ရပါတယ်။</p>
+<pre><code class="language-html">&lt;a href=&quot;https://google.com&quot;&gt;Go To Google&lt;/a&gt;
 </code></pre>
-<p>HTML ကိုအသုံးပြုတဲ့အခါ ရေးသားမဲ့ Document ဖိုင်သည် HTML Document ဖြစ်တယ်ဆိုတာကို ကြောညာရပါတယ်။
-ဒီ့အတွက် Document သည် HTML Document ဖြစ်တယ်ဆိုတာကိုအောက်ပါအတိုင်းကြေညာပေးရပါတယ်။
-ယခုလိုကြေညာလိုက်ခြင်းသည် HTML 5 ကိုအသုံးပြုမယ်ဆိုတာကိုလည်းကြေညာပြီးဖြစ်ပါတယ်။</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+<p><code>href</code> သည် Hyper Reference ရဲ့အတိုကောက်ဖြစ်ပါတယ်။
+<code>href</code> Attribute သည် သွားလိုသည့် Destination (or) Path ကိုညွှန်းပေးပါတယ်။
+ပြင်ပ Website များကို Link ချိတ်ချင်တာဖြစ်လို့ <code>https://</code>  (or) <code>http://</code> ဆိုတဲ့ Protocol ကို Website Address ရဲ့ ရှေ့မှာထည့်ပေးရပါတယ်။
+ပြင်ပ Website များကိုချိတ်ဆက်ခြင်းကို Relative Linking လို့ခေါ်ပါတယ်။</p>
+<p>Local Webpage များကိုချိတ်ဆက်ချင်တဲ့အခါ File Path ကိုချိတ်ပေးယုံပါပဲ။
+ဉပမာ - index.html File နှင့် another.html ဆိုတဲ့ HTML ဖိုင် နှစ်ခုရှိတယ်ဆိုပါစို့။
+<code>index.html</code> ကနေ <code>another.html</code> ကိုချိတ်ချင်တဲ့အခါအောက်ပါအတိုင်းချိတ်ရပါတယ်။</p>
+<pre><code class="language-html">&lt;a href=&quot;another.html&quot;&gt;Go To Another Local Web Page (or) Document&lt;/a&gt;
 </code></pre>
-<p>ရေးသားမည့် Document သည် HTML ဖြစ်တဲ့အတွက် -</p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt; ...  &lt;/html&gt;
+<p>အကယ်၍ <code>another.html</code> သည် Folder တစ်ခုအောက်တွင်ရှိလျှင် ယင်းဖိုဒါ Path ကိုပါအတိအကျထည့်ပြီးချိတ်ဆက်ပေးရပါတယ်။</p>
+<pre><code class="language-html">&lt;a href=&quot;folderName/another.html&quot;&gt;Go To Another Local Web Page (or) Document&lt;/a&gt;
 </code></pre>
-<p>ထဲမှာရေးရပါတယ်။</p>
-<p><code>html</code> Element ထဲတွင် <code>head</code> နှင့် <code>body</code> Element ရှိဖို့လိုအပ်ပါတယ်။</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt; 
-&lt;head&gt; ... &lt;/head&gt;
-&lt;body&gt; ... &lt;/body&gt;
- &lt;/html&gt;
+<p>##.Local Web Document များကိုချိတ်ဆက်ခြင်းကို Absolute Linking လို့ခေါ်ပါတယ်။</p>
+<p><strong>Identifier Name - ID</strong></p>
+<p>ID ကိုတော့ Unique ဖြစ်စေချင်တဲ့အခါသုံးပါတယ်။
+Local Web Document ထဲမှာရှိတဲ့ Data တွေကိုချိတ်ဆက်ချင်တဲ့အခါ ID သတ်မှတ်ပြီးတော့အတိအကျချိတ်ဆက်ရပါတယ်။
+သို့မှသာ Link ကို နှိပ်လိုက်တဲ့အခါအတိအကျသွားမှာဖြစ်ပါတယ်။</p>
+<p>ID သတ်မှတ်တဲ့အခါအောက်ပါအတိုင်းသတ်မှတ်ရပါတယ်။</p>
+<pre><code class="language-html">&lt;p id=&quot;para&quot;&gt;
+  A Paragrapgh.
+&lt;/p&gt;
 </code></pre>
-<p><code>head</code> Element ထဲမှာ <code>title</code> Element လိုအပ်ပါတယ်။
-<code>title</code> Element သည် Web Document ၏ Title အဖြစ် User Browser ပေါ်မှာဖော်ပြပေးပါတယ်။</p>
-<p><code>body</code> Element ထဲမှာတော့ Heading များ၊ Paragraph များ၊ Form များစသည်တို့ကိုတည်ဆောက်လို့ရပါတယ်။
-User သည်လည်း HTML Body ထဲမှာရှိသည့် အကြောင်းအရာများကိုပဲမြင်ရမှာဖြစ်ပါတယ်။</p>
+<p>ထို ID ကို Anchor Link မှလှမ်းချိတ်ချင်တဲ့အခါ အောက်ပါအတိုင်းချိတ်ပေးရပါတယ်။</p>
+<pre><code class="language-html">&lt;p id=&quot;para&quot;&gt;
+  A Paragrapgh.
+&lt;/p&gt;
+&lt;a href=&quot;#para&quot;&gt;&lt;/a&gt;
+</code></pre>
+<p><code>#</code> - Pound Sign (or) Hash Sign အသုံးပြုပြီး Local Web Document ကိုချိတ်ဆက်နိုင်ပါတယ်။
+<code>#</code> ရဲ့နောက်မှာတော့ သတ်မှတ်ခဲ့တဲ့ <code>id</code> ရဲ့ Value ကိုပေးရပါတယ်။သို့မှသာ Local Document အတွင်းကောင်းစွာအလုပ်လုပ်မှာဖြစ်ပါတယ်။
+Local Document အတွင်း ချိတ်ဆက်ခြင်းကို Bookmark လုပ်ခြင်းလို့လည်းခေါ်ပါတယ်။</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="what-is-html.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="text-formatting.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
-                        
-                            <a rel="next" href="headings-and-paragraph.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -227,15 +225,11 @@ User သည်လည်း HTML Body ထဲမှာရှိသည့် အက
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="what-is-html.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="text-formatting.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
-                
-                    <a rel="next" href="headings-and-paragraph.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
                 
             </nav>
 
