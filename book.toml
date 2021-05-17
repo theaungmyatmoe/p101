@@ -1,0 +1,9 @@
+[book]
+authors = ["Aung Myat Moe"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Programming 101"
+
+[output.html]
+additional-css = ["theme/custom.css"]
