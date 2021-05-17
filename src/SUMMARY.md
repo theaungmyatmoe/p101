@@ -6,3 +6,5 @@
 - [Attributes and Values](./attributes-and-values.md)
 - [Text Formatting](./text-formatting.md)
 - [Anchor Link](./anchor-link.md)
+- [Table](./table.md)
+- [List](./list.md)
