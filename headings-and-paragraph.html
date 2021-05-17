@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Heading and Paragraph - Programming 101</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="theme/custom.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="what-is-html.html"><strong aria-hidden="true">1.</strong> What is HTML?</a></li><li class="chapter-item expanded "><a href="html-document.html"><strong aria-hidden="true">2.</strong> HTML Document</a></li><li class="chapter-item expanded "><a href="headings-and-paragraph.html" class="active"><strong aria-hidden="true">3.</strong> Heading and Paragraph</a></li><li class="chapter-item expanded "><a href="attributes-and-values.html"><strong aria-hidden="true">4.</strong> Attributes and Values</a></li><li class="chapter-item expanded "><a href="text-formatting.html"><strong aria-hidden="true">5.</strong> Text Formatting</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Programming 101</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="headings-and-paragraph"><a class="header" href="#headings-and-paragraph">Headings and Paragraph</a></h1>
+<p>Web Page များသည်လည်း Document များပဲဖြစ်သည့်အတွက် ခေါင်းစဉ်များ၊ စာပိုဒ်များ ကို HTML တွင်ရေးသားနိုင်ပါတယ်။</p>
+<h2 id="headings"><a class="header" href="#headings">Headings</a></h2>
+<p>ခေါင်းစဉ်များရေးသားတဲ့အခါ <code>&lt;h&gt;</code> Element ကိုအသုံးပြုပါတယ်။ <code>h</code> ရဲ့အရှည်ကတော့ Heading ဖြစ်ပါတယ်။
+Heading ‌တည်‌‌ဆောက်တဲ့အခါ သူတို့ရဲ့ အရွယ်အစားကိုသတ်မှတ်ဖို့လိုပါတယ်။
+Heading သည်အရွယ်အစား (၆) ခုရှိပါတယ်။
+၎င်းတို့မှာ - </p>
+<pre><code>Heading 1 =&gt; h1
+Heading 2 =&gt; h2
+Heading 3 =&gt; h3
+Heading 4 =&gt; h4
+Heading 5 =&gt; h5
+Heading 6 =&gt; h6
+</code></pre>
+<p><code>h1</code> သည် အကြီးဆုံးအရွယ်အစားဖြစ်ပြီး၊ <code>h6</code> သည် အငယ်ဆုံးအရွယ်အစားဖြစ်ပါတယ်။
+၎င်းတို့ကို HTML ပုံစံဖြင့်ရေးသားရလျှင် -</p>
+<pre><code class="language-html">  &lt;h1&gt;Heading 1&lt;/h1&gt;
+  &lt;h2&gt;Heading 2&lt;/h2&gt;
+  &lt;h3&gt;Heading 3&lt;/h3&gt;
+  &lt;h4&gt;Heading 4&lt;/h4&gt;
+  &lt;h5&gt;Heading 5&lt;/h5&gt;
+  &lt;h6&gt;Heading 6&lt;/h7&gt;
+</code></pre>
+<p>၎င်းတို့၏ ရလဒ်သည် အောက်ပါအတိုင်းဖြစ်ပေါ်လာမည်ဖြစ်သည်။</p>
+<h1 id="heading-1"><a class="header" href="#heading-1">Heading 1</a></h1>
+  <h2 id="heading-2"><a class="header" href="#heading-2">Heading 2</a></h2>
+  <h3 id="heading-3"><a class="header" href="#heading-3">Heading 3</a></h3>
+  <h4 id="heading-4"><a class="header" href="#heading-4">Heading 4</a></h4>
+  <h5 id="heading-5"><a class="header" href="#heading-5">Heading 5</a></h5>
+  <h6 id="heading-6"><a class="header" href="#heading-6">Heading 6</a></h6>
+<p>Heading များကိုအရေးကြီးသည့်ခေါင်းစဉ်ကြီးများအတွက်အသုံးပြုလေ့ရှိပါတယ်။</p>
+<h2 id="paragraph"><a class="header" href="#paragraph">Paragraph</a></h2>
+<p>Document တစ်ခုတွင် Heading အပြင် Paragraph များလည်းပါရှိပါသည်။ Paragraph တစ်ခုကို HTML တွင်အောက်ပါအတိုင်းရေးသားနိုင်ပါတယ်။</p>
+<pre><code class="language-html">&lt;p&gt;
+A paragraph.
+&lt;/p&gt;
+</code></pre>
+<p>Paragraph များသည်တစ်ခုမကပို၍ရေးသားနိုင်သည်။ </p>
+<pre><code class="language-html">  &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae, veritatis praesentium dicta unde et ex soluta ipsa, culpa in voluptate officiis nihil magni fugiat tempora, commodi nulla iste voluptatibus.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem animi corporis dolore optio facere odit illo fugit laborum, mollitia. Maiores, rem earum beatae reiciendis cumque aliquam consectetur! Maiores sapiente, cumque.
+  &lt;/p&gt;
+</code></pre>
+<p>၎င်းတို့ကို Web Browser က Render လုပ်တဲ့အခါ အောက်ပါအတိုင်းတွေ့ရမှာဖြစ်ပါတယ်။</p>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae, veritatis praesentium dicta unde et ex soluta ipsa, culpa in voluptate officiis nihil magni fugiat tempora, commodi nulla iste voluptatibus.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem animi corporis dolore optio facere odit illo fugit laborum, mollitia. Maiores, rem earum beatae reiciendis cumque aliquam consectetur! Maiores sapiente, cumque.
+  </p>
+<p>Combination of Heading and Paragraph</p>
+<p>Heading များနှင့် Paragraph များကိုအောက်ပါအတိုင်းပေါင်းရေးနိုင်ပါတယ်။</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;title&gt;Title of This Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;h1&gt;Programming 101&lt;/h1&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis labore sunt sit, ut quos cupiditate autem, unde quis repellendus, placeat quidem a voluptatibus. Animi excepturi quia perferendis cum repellat tenetur!
+  &lt;/p&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit qui minima doloribus suscipit eveniet nisi libero autem magni enim tempore, consectetur repudiandae voluptatem assumenda cumque, obcaecati. Magni aut vero labore.
+  &lt;/p&gt;
+  &lt;h2&gt;About&lt;/h2&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dignissimos magni consequuntur, earum atque assumenda similique et perferendis, ex, consequatur in, numquam a quis fugit sit alias suscipit dolor nam!
+  &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="html-document.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="attributes-and-values.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="html-document.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="attributes-and-values.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
