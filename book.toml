@@ -7,3 +7,5 @@ title = "Programming 101"
 
 [output.html]
 additional-css = ["theme/custom.css"]
+git-repository-url = "https://github.com/amm834/p101"
+git-repository-icon = " fa-github"
