@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Table - Programming 101</title>
+        <title>Source Codes Style - Programming 101</title>
         
         
 
@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="what-is-html.html"><strong aria-hidden="true">1.</strong> What is HTML?</a></li><li class="chapter-item expanded "><a href="html-document.html"><strong aria-hidden="true">2.</strong> HTML Document</a></li><li class="chapter-item expanded "><a href="headings-and-paragraph.html"><strong aria-hidden="true">3.</strong> Heading and Paragraph</a></li><li class="chapter-item expanded "><a href="attributes-and-values.html"><strong aria-hidden="true">4.</strong> Attributes and Values</a></li><li class="chapter-item expanded "><a href="text-formatting.html"><strong aria-hidden="true">5.</strong> Text Formatting</a></li><li class="chapter-item expanded "><a href="anchor-link.html"><strong aria-hidden="true">6.</strong> Anchor Link</a></li><li class="chapter-item expanded "><a href="table.html" class="active"><strong aria-hidden="true">7.</strong> Table</a></li><li class="chapter-item expanded "><a href="list.html"><strong aria-hidden="true">8.</strong> List</a></li><li class="chapter-item expanded "><a href="grouping-elements.html"><strong aria-hidden="true">9.</strong> Group Elements</a></li><li class="chapter-item expanded "><a href="source-codes-style.html"><strong aria-hidden="true">10.</strong> Source Codes Style</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="what-is-html.html"><strong aria-hidden="true">1.</strong> What is HTML?</a></li><li class="chapter-item expanded "><a href="html-document.html"><strong aria-hidden="true">2.</strong> HTML Document</a></li><li class="chapter-item expanded "><a href="headings-and-paragraph.html"><strong aria-hidden="true">3.</strong> Heading and Paragraph</a></li><li class="chapter-item expanded "><a href="attributes-and-values.html"><strong aria-hidden="true">4.</strong> Attributes and Values</a></li><li class="chapter-item expanded "><a href="text-formatting.html"><strong aria-hidden="true">5.</strong> Text Formatting</a></li><li class="chapter-item expanded "><a href="anchor-link.html"><strong aria-hidden="true">6.</strong> Anchor Link</a></li><li class="chapter-item expanded "><a href="table.html"><strong aria-hidden="true">7.</strong> Table</a></li><li class="chapter-item expanded "><a href="list.html"><strong aria-hidden="true">8.</strong> List</a></li><li class="chapter-item expanded "><a href="grouping-elements.html"><strong aria-hidden="true">9.</strong> Group Elements</a></li><li class="chapter-item expanded "><a href="source-codes-style.html" class="active"><strong aria-hidden="true">10.</strong> Source Codes Style</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -169,105 +169,29 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="table"><a class="header" href="#table">Table</a></h1>
-<p>ဇယားကွက်တွေကို Table လို့ခေါ်ပါတယ်။
-Table တွေသည် Data Display တဲ့အခါ သေသေသပ်သပ်ဖြစ်စေပါတယ်။</p>
-<p>Table တစ်ခုတွင် Table Row နှင့် Table Column ဆိုပြီးပါဝင်ပါတယ်။
-Table Row ထဲမှ အကွက်လေးတစ်ကွက်စီကို Table Cell။ လို့ခေါ်ပါတယ်။</p>
-<p>ထိုနည်းအတိုင်းပဲ - HTML ကိုအသုံးပြုတဲ့အခါ Table row , Table Column, Table Cell ဆိုပြီးသုံးခုပါရှိဖို့လိုအပ်ပါတယ်။</p>
-<pre><code class="language-html">&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt; ... &lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
+                        <h1 id="source-codes-style"><a class="header" href="#source-codes-style">Source Codes Style</a></h1>
+<p>ကျွန်တော်တို့ရေးသားနေတဲ့ HTML Source Code များကိုဖြစ်စေ၊ အခြား Language တစ်ခုခု၏ Source Code များကိုဖြစ်စေ Web Browser ပေါ်တွင်ဖော်ပြချင်တဲ့အခါ XMP Element,Pre Element နဲ့ Code Element တို့ကိုသုံးပါတယ်။</p>
+<h2 id="xmp-element"><a class="header" href="#xmp-element">XMP Element</a></h2>
+<pre><code class="language-html">&lt;xmp&gt;
+  &lt;?php
+  echo &quot;Hello World!&quot;;
+  ?&gt;
+&lt;/xmp&gt;
 </code></pre>
-<ul>
-<li><code>&lt;table&gt;</code> =&gt; Declared as a table</li>
-<li><code>&lt;tr&gt;</code> =&gt; Table Row</li>
-<li><code>&lt;td&gt;</code> =&gt; A Table Cell</li>
-</ul>
-<p>Table ဖြစ်သည့်အတွက် Table Element ထဲမှာ Table Cell နှင့် Table Row ကိုထည့်ရေးရပါတယ်။
-Table Row - <code>&lt;tr&gt;</code> Element တစ်ခုသည် Horizontal Row တစ်ခုကိုကိုယ်စားပြုပါတယ်။
-သူ့အထဲက <code>&lt;td&gt;</code> Element ကတော့ Table Cell တစ်ကွက်ကိုကိုယ်စားပြုပါတယ်။
-Table Data လို့ခေါ်ပါတယ်။</p>
-<p>Table Row ထဲတွင် Table Cell များကိုထည့်သည့်အခါ ညာဘက်သို့ တစ်ကွက်ချင်းစီတိုးသွားမှာဖြစ်ပါတယ်။</p>
-<pre><code class="language-html">&lt;table&gt;
-  &lt;tr&gt;
-    &lt;td&gt;One&lt;/td&gt;
-    &lt;td&gt;Two&lt;/td&gt;
-    &lt;td&gt;Three&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
+<h2 id="pre-element"><a class="header" href="#pre-element">Pre Element</a></h2>
+<p>Pre Element ကို ဖော်ပြလိုသည့်စာသားကို Source Code ထဲတွင်ရေးသားသာ့်အတိုင်း Browser တွင်ဖော်ပြချင်တဲ့အခါအသုံးပြုပါတယ်။</p>
+<pre><code class="language-html">&lt;pre&gt;
+    Hey
+        Now
+            Brown
+                  Cow
+&lt;/pre&gt;
 </code></pre>
-<p>Table Row ကတော့ နောက် Table Row အသစ်ယူဖို့သုံးပါတယ်။</p>
-<pre><code class="language-html">&lt;table&gt;
-  &lt;tr&gt;
-    &lt;td&gt;One&lt;/td&gt;
-    &lt;td&gt;Two&lt;/td&gt;
-    &lt;td&gt;Three&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    ...
-  &lt;/tr&gt;
-&lt;/table&gt;
-</code></pre>
-<p>ယခု ကျောင်းသားအမည်များကို Table ပုံစံဖြင့်ဖော်ပြကြည့်ပါမယ်။</p>
-<pre><code class="language-html">&lt;table border=&quot;1&quot;&gt;
-  &lt;tr&gt;
-    &lt;th&gt;No.&lt;/th&gt;
-    &lt;th&gt;Name&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;
-    &lt;td&gt;Mg Mg&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;2.&lt;/td&gt;
-    &lt;td&gt;Aung Aung&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;3.&lt;/td&gt;
-    &lt;td&gt;Hla Hla&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;4&lt;/td&gt;
-    &lt;td&gt;Mya Mya&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-&lt;caption&gt;Student Table&lt;/caption&gt;
-</code></pre>
-<ul>
-<li>Table ဖြစ်သည့်အတွက် Table Element နှင့် Wrap လုပ်ထားပါတယ်။</li>
-<li>ပထမဆုံး Table Row ထဲတွက်ပါဝင်သော <code>&lt;the &gt;</code>  သည် Table Header ဖြစ်ပါတယ်။</li>
-<li>ထင်ရှားစေချင်လို့ <code>&lt;td&gt;</code> အစားသုံးတာဖြစ်ပါတယ်။</li>
-<li>ကျန်တဲ့ Table Row အသစ်များတည်ဆောက်တဲ့အခါ ပထမဆုံးပေးထားတဲ့ Table Row ထဲက Table Data အရည်အတွက်များနဲ့တူအောင်ထည့်ပါ။မထည့်တဲ့အခါ အကွက်တွေလိုနေတာ၊ ပိုနေတာ ဖြစ်တတ်ပါတယ်။</li>
-<li>Table Element ထဲက Border Attribute ကတော့ Default Table ပုံစံမှာ Border မပါတဲ့အတွက် Border ထည့်ပေးချင်လို့သုံးတာဖြစ်ပါတယ်။</li>
-<li><code>1</code> ကတော့ Border ရဲ့ Size ဖြစ်ပါတယ်။
-Caption Element ကိုတော့ Table ရဲ့ Caption ထည့်ပေးချင်တဲ့အခါသုံးပါတယ်။</li>
-</ul>
-<pre><code class="language-html">&lt;table border=&quot;1&quot;&gt;
-  &lt;tr&gt;
-    &lt;th&gt;No.&lt;/th&gt;
-    &lt;th&gt;Name&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;
-    &lt;td&gt;Mg Mg&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;2.&lt;/td&gt;
-    &lt;td&gt;Aung Aung&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;3.&lt;/td&gt;
-    &lt;td&gt;Hla Hla&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;4&lt;/td&gt;
-    &lt;td&gt;Mya Mya&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-&lt;caption&gt;Student Table&lt;/caption&gt;
+<h2 id="code-element"><a class="header" href="#code-element">Code Element</a></h2>
+<p>Inline Text များတွင် Source Code များကိုဖော်ပြချင်တဲ့အခါအသုံးပြုပါတယ်။</p>
+<pre><code class="language-html">&lt;p&gt;
+ &lt;code&gt;echo &quot;Hello World!&quot;;&lt;/code&gt; is a  statement of PHP.
+&lt;/p&gt;
 </code></pre>
 
                     </main>
@@ -275,15 +199,11 @@ Caption Element ကိုတော့ Table ရဲ့ Caption ထည့်ပေ
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="anchor-link.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="grouping-elements.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
-                        
-                            <a rel="next" href="list.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -293,15 +213,11 @@ Caption Element ကိုတော့ Table ရဲ့ Caption ထည့်ပေ
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="anchor-link.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="grouping-elements.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
-                
-                    <a rel="next" href="list.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
                 
             </nav>
 

@@ -99,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="what-is-html.html"><strong aria-hidden="true">1.</strong> What is HTML?</a></li><li class="chapter-item expanded "><a href="html-document.html"><strong aria-hidden="true">2.</strong> HTML Document</a></li><li class="chapter-item expanded "><a href="headings-and-paragraph.html"><strong aria-hidden="true">3.</strong> Heading and Paragraph</a></li><li class="chapter-item expanded "><a href="attributes-and-values.html"><strong aria-hidden="true">4.</strong> Attributes and Values</a></li><li class="chapter-item expanded "><a href="text-formatting.html"><strong aria-hidden="true">5.</strong> Text Formatting</a></li><li class="chapter-item expanded "><a href="anchor-link.html"><strong aria-hidden="true">6.</strong> Anchor Link</a></li><li class="chapter-item expanded "><a href="table.html"><strong aria-hidden="true">7.</strong> Table</a></li><li class="chapter-item expanded "><a href="list.html"><strong aria-hidden="true">8.</strong> List</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="what-is-html.html"><strong aria-hidden="true">1.</strong> What is HTML?</a></li><li class="chapter-item expanded "><a href="html-document.html"><strong aria-hidden="true">2.</strong> HTML Document</a></li><li class="chapter-item expanded "><a href="headings-and-paragraph.html"><strong aria-hidden="true">3.</strong> Heading and Paragraph</a></li><li class="chapter-item expanded "><a href="attributes-and-values.html"><strong aria-hidden="true">4.</strong> Attributes and Values</a></li><li class="chapter-item expanded "><a href="text-formatting.html"><strong aria-hidden="true">5.</strong> Text Formatting</a></li><li class="chapter-item expanded "><a href="anchor-link.html"><strong aria-hidden="true">6.</strong> Anchor Link</a></li><li class="chapter-item expanded "><a href="table.html"><strong aria-hidden="true">7.</strong> Table</a></li><li class="chapter-item expanded "><a href="list.html"><strong aria-hidden="true">8.</strong> List</a></li><li class="chapter-item expanded "><a href="grouping-elements.html"><strong aria-hidden="true">9.</strong> Group Elements</a></li><li class="chapter-item expanded "><a href="source-codes-style.html"><strong aria-hidden="true">10.</strong> Source Codes Style</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -580,7 +580,57 @@ Caption Element ကိုတော့ Table ရဲ့ Caption ထည့်ပေ
   <li>Mg Mg</li>
    <li>Hla Hla</li>
   <li>Mya Mya</li>
- </ul>
+ </ul><div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="grouping-elements"><a class="header" href="#grouping-elements">Grouping Elements</a></h1>
+<p>HTML Element များကိုတစ်စည်းတည်းထားချင်တဲ့အခါ Grouping Elements များကိုအသုံးပြုပါတယ်။</p>
+<p>Div Element ကို Element များ တစ်စုတစ်စည်းတည်းထားဖို့သုံးပါတယ်။</p>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;h1&gt;About&lt;/h1&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam voluptatem illum quae, amet quia repellendus labore, aliquam similique ut corporis vitae harum asperiores consectetur molestias vel explicabo odit sunt hic.
+  &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Div Element သည် Block Element ဖြစ်ပါတယ်။</p>
+<h2 id="block-element"><a class="header" href="#block-element">Block Element</a></h2>
+<p>Block သည် Browser ၏ Horizonal မျက်နှာပြင်တစ်ခုလုံးအပြည့်ယူပါတယ်။
+၎င်း၏ ဘေးသို့ အခြား Element များဝင်၍မရပါ။</p>
+<pre><code class="language-html">  &lt;h1&gt;About&lt;/h1&gt;
+  &lt;b&gt;Hello&lt;/b&gt;
+</code></pre>
+<p>H1 Element သည် Block ဖြစ်တဲ့အတွက် Bold Element သည် H1 ၏ညာဘက်ဘေးသို့မရောက်ဘဲ အောက်ရောက်နေတာကိုတွေ့ရမှာဖြစ်ပါတယ်။</p>
+<h2 id="inline-element"><a class="header" href="#inline-element">Inline Element</a></h2>
+<p>Span Element ကို Inline Element အဖြစ်ပြုလုပ်စေချင်တဲ့အခါအသုံးပြုပါတယ်။ 
+Span သည် မူရင်း Content အခြား Property များသက်ရောက်စေခြင်းမရှိပါ။</p>
+<pre><code class="language-html">  &lt;p&gt;
+    Lorem ipsum &lt;span&gt; dolor sit &lt;/span&gt; amet, consectetur adipisicing elit. Magnam voluptatem illum quae, amet quia repellendus labore, aliquam similique ut corporis vitae harum asperiores consectetur molestias vel explicabo odit sunt hic.
+  &lt;/p&gt;
+</code></pre>
+<p>Span Element ကိုအသုံးပြုလိုက်ခြင်းသည် Group လုပ်လိုက်သည့်သဘောမျိုးသာသက်ရောက်စေပါတယ်။အခြားသက်ရောက်မှုမရှိပါ။</p>
+<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="source-codes-style"><a class="header" href="#source-codes-style">Source Codes Style</a></h1>
+<p>ကျွန်တော်တို့ရေးသားနေတဲ့ HTML Source Code များကိုဖြစ်စေ၊ အခြား Language တစ်ခုခု၏ Source Code များကိုဖြစ်စေ Web Browser ပေါ်တွင်ဖော်ပြချင်တဲ့အခါ XMP Element,Pre Element နဲ့ Code Element တို့ကိုသုံးပါတယ်။</p>
+<h2 id="xmp-element"><a class="header" href="#xmp-element">XMP Element</a></h2>
+<pre><code class="language-html">&lt;xmp&gt;
+  &lt;?php
+  echo &quot;Hello World!&quot;;
+  ?&gt;
+&lt;/xmp&gt;
+</code></pre>
+<h2 id="pre-element"><a class="header" href="#pre-element">Pre Element</a></h2>
+<p>Pre Element ကို ဖော်ပြလိုသည့်စာသားကို Source Code ထဲတွင်ရေးသားသာ့်အတိုင်း Browser တွင်ဖော်ပြချင်တဲ့အခါအသုံးပြုပါတယ်။</p>
+<pre><code class="language-html">&lt;pre&gt;
+    Hey
+        Now
+            Brown
+                  Cow
+&lt;/pre&gt;
+</code></pre>
+<h2 id="code-element"><a class="header" href="#code-element">Code Element</a></h2>
+<p>Inline Text များတွင် Source Code များကိုဖော်ပြချင်တဲ့အခါအသုံးပြုပါတယ်။</p>
+<pre><code class="language-html">&lt;p&gt;
+ &lt;code&gt;echo &quot;Hello World!&quot;;&lt;/code&gt; is a  statement of PHP.
+&lt;/p&gt;
+</code></pre>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
