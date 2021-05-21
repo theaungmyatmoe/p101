@@ -10,4 +10,5 @@
 - [List](./list.md)
 - [Group Elements](./grouping-elements.md)
 - [Source Codes Style](./source-codes-style.md)
-- [Test]()
+- [Form and Input Types](./form-and-input-types.md)
+- [Entities And URI](./entities-and-uri.md)
