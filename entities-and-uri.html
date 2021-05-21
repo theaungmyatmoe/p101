@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>HTML Document - Programming 101</title>
+        <title>Entities And URI - Programming 101</title>
         
         
 
@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="what-is-html.html"><strong aria-hidden="true">1.</strong> What is HTML?</a></li><li class="chapter-item expanded "><a href="html-document.html" class="active"><strong aria-hidden="true">2.</strong> HTML Document</a></li><li class="chapter-item expanded "><a href="headings-and-paragraph.html"><strong aria-hidden="true">3.</strong> Heading and Paragraph</a></li><li class="chapter-item expanded "><a href="attributes-and-values.html"><strong aria-hidden="true">4.</strong> Attributes and Values</a></li><li class="chapter-item expanded "><a href="text-formatting.html"><strong aria-hidden="true">5.</strong> Text Formatting</a></li><li class="chapter-item expanded "><a href="anchor-link.html"><strong aria-hidden="true">6.</strong> Anchor Link</a></li><li class="chapter-item expanded "><a href="table.html"><strong aria-hidden="true">7.</strong> Table</a></li><li class="chapter-item expanded "><a href="list.html"><strong aria-hidden="true">8.</strong> List</a></li><li class="chapter-item expanded "><a href="grouping-elements.html"><strong aria-hidden="true">9.</strong> Group Elements</a></li><li class="chapter-item expanded "><a href="source-codes-style.html"><strong aria-hidden="true">10.</strong> Source Codes Style</a></li><li class="chapter-item expanded "><a href="form-and-input-types.html"><strong aria-hidden="true">11.</strong> Form and Input Types</a></li><li class="chapter-item expanded "><a href="entities-and-uri.html"><strong aria-hidden="true">12.</strong> Entities And URI</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="what-is-html.html"><strong aria-hidden="true">1.</strong> What is HTML?</a></li><li class="chapter-item expanded "><a href="html-document.html"><strong aria-hidden="true">2.</strong> HTML Document</a></li><li class="chapter-item expanded "><a href="headings-and-paragraph.html"><strong aria-hidden="true">3.</strong> Heading and Paragraph</a></li><li class="chapter-item expanded "><a href="attributes-and-values.html"><strong aria-hidden="true">4.</strong> Attributes and Values</a></li><li class="chapter-item expanded "><a href="text-formatting.html"><strong aria-hidden="true">5.</strong> Text Formatting</a></li><li class="chapter-item expanded "><a href="anchor-link.html"><strong aria-hidden="true">6.</strong> Anchor Link</a></li><li class="chapter-item expanded "><a href="table.html"><strong aria-hidden="true">7.</strong> Table</a></li><li class="chapter-item expanded "><a href="list.html"><strong aria-hidden="true">8.</strong> List</a></li><li class="chapter-item expanded "><a href="grouping-elements.html"><strong aria-hidden="true">9.</strong> Group Elements</a></li><li class="chapter-item expanded "><a href="source-codes-style.html"><strong aria-hidden="true">10.</strong> Source Codes Style</a></li><li class="chapter-item expanded "><a href="form-and-input-types.html"><strong aria-hidden="true">11.</strong> Form and Input Types</a></li><li class="chapter-item expanded "><a href="entities-and-uri.html" class="active"><strong aria-hidden="true">12.</strong> Entities And URI</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -169,55 +169,69 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="html-document"><a class="header" href="#html-document">HTML Document</a></h1>
-<p>Web Browser တွင်မြင်တွေ့နေရသော Website များကို Web Page များ (သို့မဟုတ်) HTMl Document များနှင့်တည်‌ဆောက်ထားတာဖြစ်ပါတယ်။</p>
-<h2 id="base-structure-of-html"><a class="header" href="#base-structure-of-html">Base Structure of HTML</a></h2>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;title&gt;Title of This Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  
-&lt;/body&gt;
-&lt;/html&gt;
+                        <h1 id="entities-and-reading-uri"><a class="header" href="#entities-and-reading-uri">Entities and Reading URI</a></h1>
+<p><code>©,®,™</code> စတဲ့ Symbol တွေကို HTML ကနေသတ်မှတ်လို့ရပါတယ်။</p>
+<p><code>©</code> ကိုသုံးဖို့အတွက် <code>&amp;copy;</code> ကိုသုံးနိုင်ပါတယ်။</p>
+<pre><code class="language-html">&lt;p&gt;
+  &amp;copy;2021-2022 By Programming 101.
+&lt;/p&gt;
 </code></pre>
-<p>HTML ကိုအသုံးပြုတဲ့အခါ ရေးသားမဲ့ Document ဖိုင်သည် HTML Document ဖြစ်တယ်ဆိုတာကို ကြောညာရပါတယ်။
-ဒီ့အတွက် Document သည် HTML Document ဖြစ်တယ်ဆိုတာကိုအောက်ပါအတိုင်းကြေညာပေးရပါတယ်။
-ယခုလိုကြေညာလိုက်ခြင်းသည် HTML 5 ကိုအသုံးပြုမယ်ဆိုတာကိုလည်းကြေညာပြီးဖြစ်ပါတယ်။</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+<p>Symbol List ကို အောက်ပါလိပ်စာမှာအသေးစိတ်ကြည့်လို့ရပါတယ်။</p>
+<p>https://dev.w3.org/html5/html-author/charref</p>
+<h1 id="reading-uri"><a class="header" href="#reading-uri">Reading URI</a></h1>
+<p>https://example.com:443/post/?id=123</p>
+<ul>
+<li>https =&gt; Scheme </li>
+<li>example.com =&gt; User Info</li>
+<li>443 =&gt; Port</li>
+<li>/post/?id=123 =&gt; Query</li>
+</ul>
+<p>Scheme ကတော့ HTTP,HTTPS နဲ့ FTPS လို Service တွေကိုဖော်ပြတာပါ။</p>
+<p>example.com ကတော့ Host ပါ။</p>
+<p>443 ကတော့ Port ဖြစ်ပါတယ်။</p>
+<p>Query ကတော့သက်ဆိုင်ရာ Fragmentတွေကိုညွှန်းဖို့သုံးတာဖြစ်ပါတယ်။</p>
+<h1 id="other-example"><a class="header" href="#other-example">Other Example</a></h1>
+<pre><code>          userinfo       host      port
+          ┌──┴───┐ ┌──────┴──────┐ ┌┴┐
+  https://john.doe@www.example.com:123/forum/questions/?tag=networking&amp;order=newest#top
+  └─┬─┘   └───────────┬──────────────┘└───────┬───────┘ └───────────┬─────────────┘ └┬┘
+  scheme          authority                  path                 query           fragment
+
+  ldap://[2001:db8::7]/c=GB?objectClass?one
+  └┬─┘   └─────┬─────┘└─┬─┘ └──────┬──────┘
+  scheme   authority   path      query
+
+  mailto:John.Doe@example.com
+  └─┬──┘ └────┬─────────────┘
+  scheme     path
+
+  news:comp.infosystems.www.servers.unix
+  └┬─┘ └─────────────┬─────────────────┘
+  scheme            path
+
+  tel:+1-816-555-1212
+  └┬┘ └──────┬──────┘
+  scheme    path
+
+  telnet://192.0.2.16:80/
+  └─┬──┘   └─────┬─────┘│
+  scheme     authority  path
+
+  urn:oasis:names:specification:docbook:dtd:xml:4.1.2
+  └┬┘ └──────────────────────┬──────────────────────┘
+  scheme                    path
 </code></pre>
-<p>ရေးသားမည့် Document သည် HTML ဖြစ်တဲ့အတွက် -</p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt; ...  &lt;/html&gt;
-</code></pre>
-<p>ထဲမှာရေးရပါတယ်။</p>
-<p><code>html</code> Element ထဲတွင် <code>head</code> နှင့် <code>body</code> Element ရှိဖို့လိုအပ်ပါတယ်။</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt; 
-&lt;head&gt; ... &lt;/head&gt;
-&lt;body&gt; ... &lt;/body&gt;
- &lt;/html&gt;
-</code></pre>
-<p><code>head</code> Element ထဲမှာ <code>title</code> Element လိုအပ်ပါတယ်။
-<code>title</code> Element သည် Web Document ၏ Title အဖြစ် User Browser ပေါ်မှာဖော်ပြပေးပါတယ်။</p>
-<p><code>body</code> Element ထဲမှာတော့ Heading များ၊ Paragraph များ၊ Form များစသည်တို့ကိုတည်ဆောက်လို့ရပါတယ်။
-User သည်လည်း HTML Body ထဲမှာရှိသည့် အကြောင်းအရာများကိုပဲမြင်ရမှာဖြစ်ပါတယ်။</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="what-is-html.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="form-and-input-types.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
-                        
-                            <a rel="next" href="headings-and-paragraph.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -227,15 +241,11 @@ User သည်လည်း HTML Body ထဲမှာရှိသည့် အက
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="what-is-html.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="form-and-input-types.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
-                
-                    <a rel="next" href="headings-and-paragraph.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
                 
             </nav>
 

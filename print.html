@@ -99,7 +99,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="what-is-html.html"><strong aria-hidden="true">1.</strong> What is HTML?</a></li><li class="chapter-item expanded "><a href="html-document.html"><strong aria-hidden="true">2.</strong> HTML Document</a></li><li class="chapter-item expanded "><a href="headings-and-paragraph.html"><strong aria-hidden="true">3.</strong> Heading and Paragraph</a></li><li class="chapter-item expanded "><a href="attributes-and-values.html"><strong aria-hidden="true">4.</strong> Attributes and Values</a></li><li class="chapter-item expanded "><a href="text-formatting.html"><strong aria-hidden="true">5.</strong> Text Formatting</a></li><li class="chapter-item expanded "><a href="anchor-link.html"><strong aria-hidden="true">6.</strong> Anchor Link</a></li><li class="chapter-item expanded "><a href="table.html"><strong aria-hidden="true">7.</strong> Table</a></li><li class="chapter-item expanded "><a href="list.html"><strong aria-hidden="true">8.</strong> List</a></li><li class="chapter-item expanded "><a href="grouping-elements.html"><strong aria-hidden="true">9.</strong> Group Elements</a></li><li class="chapter-item expanded "><a href="source-codes-style.html"><strong aria-hidden="true">10.</strong> Source Codes Style</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> Test</div></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="what-is-html.html"><strong aria-hidden="true">1.</strong> What is HTML?</a></li><li class="chapter-item expanded "><a href="html-document.html"><strong aria-hidden="true">2.</strong> HTML Document</a></li><li class="chapter-item expanded "><a href="headings-and-paragraph.html"><strong aria-hidden="true">3.</strong> Heading and Paragraph</a></li><li class="chapter-item expanded "><a href="attributes-and-values.html"><strong aria-hidden="true">4.</strong> Attributes and Values</a></li><li class="chapter-item expanded "><a href="text-formatting.html"><strong aria-hidden="true">5.</strong> Text Formatting</a></li><li class="chapter-item expanded "><a href="anchor-link.html"><strong aria-hidden="true">6.</strong> Anchor Link</a></li><li class="chapter-item expanded "><a href="table.html"><strong aria-hidden="true">7.</strong> Table</a></li><li class="chapter-item expanded "><a href="list.html"><strong aria-hidden="true">8.</strong> List</a></li><li class="chapter-item expanded "><a href="grouping-elements.html"><strong aria-hidden="true">9.</strong> Group Elements</a></li><li class="chapter-item expanded "><a href="source-codes-style.html"><strong aria-hidden="true">10.</strong> Source Codes Style</a></li><li class="chapter-item expanded "><a href="form-and-input-types.html"><strong aria-hidden="true">11.</strong> Form and Input Types</a></li><li class="chapter-item expanded "><a href="entities-and-uri.html"><strong aria-hidden="true">12.</strong> Entities And URI</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -629,6 +629,196 @@ Span သည် မူရင်း Content အခြား Property များ�
 <pre><code class="language-html">&lt;p&gt;
  &lt;code&gt;echo &quot;Hello World!&quot;;&lt;/code&gt; is a  statement of PHP.
 &lt;/p&gt;
+</code></pre>
+<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="form-and-input-types"><a class="header" href="#form-and-input-types">Form and Input Types</a></h1>
+<p>Website မှာ User ရဲ့ Data ကို Collect လုပ်ချင်တဲ့အခါ သုံးပါတယ်။
+User Data Collect လုပ်တယ်ဆိုတာ -
+Username , Password အစရှိတဲ့ Data တွေကိုတောင်းယူတဲ့လုပ်ငန်းကိုဆိုလိုတာဖြစ်ပါတယ်။</p>
+<pre><code class="language-html">&lt;form&gt;
+    ...
+&lt;/form&gt;
+</code></pre>
+<p>Form တစ်ခုကို Input လေးတွေနဲ့ဖွဲ့စည်းပါတယ်။
+ထို Input လေးမှာ User ဆီကတောင်းယူရမယ့် Data Type ကိုသတ်မှတ်ပေးရပါတယ်။</p>
+<pre><code class="language-html">&lt;form&gt;
+    &lt;input&gt;
+&lt;/form&gt;
+</code></pre>
+<p><strong>Output</strong></p>
+<form>
+    <input>
+</form>
+<p>Input ရဲ့ Default ကတော့ Text ဖြစ်ပါတယ်။</p>
+<p>Form Input မှာ Data Type သတ်မှတ်ဖို့ဆိုရင် <code>type=&quot;text&quot;</code> Attribute ကိုသုံးပြီးသတ်မှတ်နိုင်ပါတယ်။</p>
+<p>Form Input Type အတော်များများကို HTML က Support ပေးပါတယ်။ဒီအထဲမှာမှအသုံးများတဲ့ Type လေးတွေနဲ့ဉပမာပေးသွားပါမယ်။</p>
+<pre><code class="language-html">&lt;form&gt;
+    &lt;input type=&quot;text&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+<p>Text ကတော့ Default Type ဖြစ်ပါတယ်။
+Password ကိုလက်ခံတဲ့အခါ <code>password</code> Type ကိုအသုံးပြုနိုင်ပါတယ်။</p>
+<pre><code class="language-html">&lt;form&gt;
+    &lt;input type=&quot;password&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+<p>အခြားအသုံးပြုနိုင်တဲ့ Type တွေကတော့ အောက်ပါအတိုင်းဖြစ်ပါတယ်။</p>
+<pre><code>number
+button
+color
+date
+datetime
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+</code></pre>
+<p>Input ကို User ကဖြည့်ကိုဖြည့်ရမယ့်အချိန်မျိုးကြရင် <code>required</code> ဆိုတဲ့ Attribute ကိုသုံးပါတယ်။</p>
+<pre><code class="language-html">&lt;form&gt;
+    &lt;input type=&quot;text&quot; required&gt;
+ &lt;/form&gt;
+</code></pre>
+<p><strong>Output</strong></p>
+<form>
+    <input type="text" required>
+ </form>
+<p>Email Type ကိုအသုံးပြုတဲ့အခါ Suggestion များပေါ်တတ်ပါတယ်။ Suggestion များသည်မျက်စိနောက်စရာဖြစ်စေပါတယ်။
+ဒီ့အတွက် <code>autocomplete=&quot;off&quot;</code> ကိုသုံးနိုင်ပါတယ်။</p>
+<pre><code class="language-html">&lt;form&gt;
+    &lt;input type=&quot;email&quot; autocomplete=&quot;off&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+<p><strong>Output</strong></p>
+<form>
+    <input type="email" autocomplete="off">
+</form>
+<p>Input မှာ <code>value</code> Attribute ကို Data တွေကြိုထည့်ချင်တဲ့အခါအသုံးပြုနိုင်ပါတယ်။
+ဒီ့အပြင် Database မှပြန်ကျလာသော Data များကိုပြ‌ချင်တဲ့အခါလည်းသုံးသလို၊ JavaScript ကနေ Data ကို Collect ဖို့လည်းသုံးလေ့ရှိပါတယ်။</p>
+<pre><code class="language-html">&lt;form&gt;
+    &lt;input type=&quot;text&quot; value=&quot;John Doe&quot; /&gt;
+ &lt;/form&gt;
+</code></pre>
+<p><strong>Output</strong></p>
+<form>
+    <input type="text" value="John Doe" />
+ </form>
+<p>User ကို Input မှာဖြည့်ရမယ့် Data ကို Hint ပေးချင်တဲ့အခါ <code>placeholder</code> Attribute ကိုသုံးပါတယ်။</p>
+<pre><code class="language-html">&lt;form&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;John Doe&quot; /&gt;
+&lt;/form&gt;
+</code></pre>
+<p><strong>Output</strong></p>
+<form>
+    <input type="text" placeholder="John Doe" />
+</form>
+<p>ယခု Username နဲ့ Password တောင်းတဲ့ Form တစ်ခုကိုတည်ဆောက်ကြည့်ပါမယ်။</p>
+<pre><code class="language-html">&lt;form action=&quot;&quot;&gt;
+  &lt;label for=&quot;Username&quot;&gt;Username&lt;/label&gt;&lt;br&gt;
+  &lt;input type=&quot;text&quot; name=&quot;Username&quot; id=&quot;Username&quot; placeholder=&quot;John Doe&quot; /&gt;&lt;br&gt;
+
+  &lt;label for=&quot;Email&quot;&gt;Email&lt;/label&gt;&lt;br&gt;
+  &lt;input type=&quot;email&quot; id=&quot;Email&quot; placeholder=&quot;you@example.com&quot;&gt;&lt;br&gt;
+
+  &lt;input type=&quot;submit&quot; value=&quot;Login&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+<p><strong>Output</strong></p>
+<form action="">
+  <label for="Username">Username</label><br>
+  <input type="text" name="Username" id="Username" placeholder="John Doe" /><br>
+<p><label for="Email">Email</label><br>
+<input type="email" id="Email" placeholder="you@example.com"><br></p>
+<input type="submit" value="Login">
+</form>
+<ul>
+<li>Label Element ကို Label Label Nameတပ်ချင်တဲ့အခါသုံးပါတယ်။</li>
+<li>For Attribute ကတော့ Lable Name ကိုနှိပ်တဲ့အချိန်မှာ ID သတ်မှတ်ထားတဲ့ Input ပေါ်ကို Cursor လေးရောက်သွားဖို့ဖြစ်ပါတယ်။</li>
+<li>Submit Button ကိုတော့ Data တွေပို့ဖို့သုံးပါတယ်။</li>
+</ul>
+<p>Checkbox </p>
+<p>Checkbox ကို Multiple Selection တွေမှာအသုံးများပါတယ်။</p>
+<pre><code class="language-html">&lt;form&gt;
+  &lt;input type=&quot;checkbox&quot; /&gt;Orange &lt;br&gt;
+  &lt;input type=&quot;checkbox&quot; /&gt;Mango &lt;br&gt;
+  &lt;input type=&quot;checkbox&quot; /&gt;Banana &lt;br&gt;
+&lt;/form&gt;
+</code></pre>
+<p><strong>Output</strong></p>
+<form>
+  <input type="checkbox" />Orange <br>
+  <input type="checkbox" />Mango <br>
+  <input type="checkbox" />Banana <br>
+</form>
+<h1 id="radio"><a class="header" href="#radio">Radio</a></h1>
+<p>Radio Type ကိုတော့ တစ်ခုတည်းအတိအကျလိုချင်တဲ့အခါသုံးပါတယ်။</p>
+<pre><code class="language-html">&lt;form&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;gender&quot; /&gt;Male &lt;br /&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;gender&quot; /&gt;Female &lt;br /&gt;
+&lt;/form&gt;
+</code></pre>
+<p><strong>Output</strong></p>
+<form>
+  <input type="radio" name="gender" />Male <br />
+  <input type="radio" name="gender" />Female <br />
+</form>
+<p>Name Attribute ကို Server ကနေ လှမ်း ဖတ်နိုင်ဖို့သုံးပါတယ်။
+Radio Type မှာ Name ထည့်ရသလိုကျန်တဲ့ Input တွေမှာလည်း Name Attribute ထည့်လို့ရပါတယ်။</p>
+<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="entities-and-reading-uri"><a class="header" href="#entities-and-reading-uri">Entities and Reading URI</a></h1>
+<p><code>©,®,™</code> စတဲ့ Symbol တွေကို HTML ကနေသတ်မှတ်လို့ရပါတယ်။</p>
+<p><code>©</code> ကိုသုံးဖို့အတွက် <code>&amp;copy;</code> ကိုသုံးနိုင်ပါတယ်။</p>
+<pre><code class="language-html">&lt;p&gt;
+  &amp;copy;2021-2022 By Programming 101.
+&lt;/p&gt;
+</code></pre>
+<p>Symbol List ကို အောက်ပါလိပ်စာမှာအသေးစိတ်ကြည့်လို့ရပါတယ်။</p>
+<p>https://dev.w3.org/html5/html-author/charref</p>
+<h1 id="reading-uri"><a class="header" href="#reading-uri">Reading URI</a></h1>
+<p>https://example.com:443/post/?id=123</p>
+<ul>
+<li>https =&gt; Scheme </li>
+<li>example.com =&gt; User Info</li>
+<li>443 =&gt; Port</li>
+<li>/post/?id=123 =&gt; Query</li>
+</ul>
+<p>Scheme ကတော့ HTTP,HTTPS နဲ့ FTPS လို Service တွေကိုဖော်ပြတာပါ။</p>
+<p>example.com ကတော့ Host ပါ။</p>
+<p>443 ကတော့ Port ဖြစ်ပါတယ်။</p>
+<p>Query ကတော့သက်ဆိုင်ရာ Fragmentတွေကိုညွှန်းဖို့သုံးတာဖြစ်ပါတယ်။</p>
+<h1 id="other-example"><a class="header" href="#other-example">Other Example</a></h1>
+<pre><code>          userinfo       host      port
+          ┌──┴───┐ ┌──────┴──────┐ ┌┴┐
+  https://john.doe@www.example.com:123/forum/questions/?tag=networking&amp;order=newest#top
+  └─┬─┘   └───────────┬──────────────┘└───────┬───────┘ └───────────┬─────────────┘ └┬┘
+  scheme          authority                  path                 query           fragment
+
+  ldap://[2001:db8::7]/c=GB?objectClass?one
+  └┬─┘   └─────┬─────┘└─┬─┘ └──────┬──────┘
+  scheme   authority   path      query
+
+  mailto:John.Doe@example.com
+  └─┬──┘ └────┬─────────────┘
+  scheme     path
+
+  news:comp.infosystems.www.servers.unix
+  └┬─┘ └─────────────┬─────────────────┘
+  scheme            path
+
+  tel:+1-816-555-1212
+  └┬┘ └──────┬──────┘
+  scheme    path
+
+  telnet://192.0.2.16:80/
+  └─┬──┘   └─────┬─────┘│
+  scheme     authority  path
+
+  urn:oasis:names:specification:docbook:dtd:xml:4.1.2
+  └┬┘ └──────────────────────┬──────────────────────┘
+  scheme                    path
 </code></pre>
 
                     </main>
